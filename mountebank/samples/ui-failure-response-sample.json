@@ -1,0 +1,14 @@
+[
+  {
+    "status": "rejected",
+    "partner_code": "insurance_provider",
+    "product_code": "group_medicare_health",
+    "plan_code": "PPGMCARE-20190227-0123",
+    "errors": [
+      {
+        "code": "EMGE8045",
+        "messsage": "Our sales coordinator will get in touch with you"
+      }
+    ]
+  }
+]

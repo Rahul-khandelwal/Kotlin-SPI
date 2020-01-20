@@ -1,0 +1,20 @@
+{
+  "partner_code": "insurance_provider",
+  "product_code": "2889",
+  "plan_code": "PPGMCARE-20190227-0122",
+  "floater_sum_insured": 4500000,
+  "quotation_id": "quote_111",
+  "pin_code": "411041",
+  "mobile": "9872322134",
+  "email": "email@email.com",
+  "members": [
+    {
+      "birth_date": "1987-11-07",
+      "suminsured": "2000000",
+      "relation": "Mother",
+      "smokerStatus": "yes",
+      "diebatic": "no",
+      "hereditry": "no"
+    }
+  ]
+}

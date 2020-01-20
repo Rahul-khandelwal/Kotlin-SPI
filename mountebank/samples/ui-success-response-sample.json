@@ -1,0 +1,33 @@
+[
+  {
+    "status": "accepted",
+    "partner_code": "insurance_provider",
+    "product_code": "2889",
+    "plan_code": "PPGMCARE-20190227-0122",
+    "quotation_id": "NB/Q/H/2889/0000072263",
+    "premium": [
+      {
+        "total": 5000.00,
+        "net": 4237.00,
+        "taxes": [
+          {
+            "type": "igst",
+            "value": 18.00
+          },
+          {
+            "type": "sgst",
+            "value": 0.00
+          },
+          {
+            "type": "cess",
+            "value": 0.00
+          }
+        ],
+        "frequency": {
+          "unit": "year",
+          "value": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,405 @@
+{
+  "port": 4547,
+  "protocol": "http",
+  "defaultResponse": {
+    "statusCode": 200,
+    "body": {
+      "status": "1",
+      "refno": "NQ71aZOVLUxQyL071XeDQFACO",
+      "data": {
+        "errcode": "EMGE8045",
+        "message": "Our sales coordinator will get in touch with you",
+        "status": "0"
+      }
+    },
+    "headers": {"Content-Type": "application/json"}
+  },
+  "stubs": [
+    {
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": { "Content-Type": "application/json" },
+            "body": {
+              "refno": "HwjbWAl3MMaVdWjXtsZ1X1psr",
+              "status": "1",
+              "data": {
+                "sgst": "0",
+                "errcode": "",
+                "netpremium": "4237.00",
+                "intermediary_name": "INTERMEDIARY_NAME",
+                "partner_name": "PARTNER_NAME",
+                "plan_code": "PLAN_CODE",
+                "grp_name": "GRP_NAME",
+                "master_pol": "MASTER_POL",
+                "other_cess": "0.00",
+                "source": "SOURCE",
+                "taxpremium": "762.66",
+                "branch": "BRANCH",
+                "igst_prem": "763.00",
+                "group_custid": "GRP_CUST_ID",
+                "members": {
+                  "m1": {
+                    "dob": "19871107",
+                    "medQs2": "NO",
+                    "medQs3": "NO",
+                    "suminsured": "2000000",
+                    "medQs1": "YES",
+                    "age": "32",
+                    "relation": "Mother"
+                  }
+                },
+                "masterpolno": "MASTER_POL",
+                "partnerappno": "PARTNER_APP_NO",
+                "basisRating": "INDIVIDUAL",
+                "cust_state_code": "31",
+                "policy_sdate": "POLICY_SDATE",
+                "sol_id": "SOL_ID",
+                "policy_tenure": "POLICY_TENURE",
+                "intermediary_code": "INTERMEDIARY_CODE",
+                "product_name": "PRODUCT_NAME",
+                "totaltax": "18.00",
+                "policy_type": "POLICY_TYPE",
+                "ab_cust_id": "AB_CUST_ID",
+                "cgst_prem": "0.00",
+                "otp_mobile_no": "OTP_MOBILE_N0",
+                "quotation_no": "QUOTATION_NO",
+                "status": "1",
+                "email_id": "EMAIL",
+                "btype_name": "BTYPE_NAME",
+                "plan_type": "PLAN_TYPE",
+                "insuredpersons": "INSURED_PERSONS",
+                "ugst": "0",
+                "mobile_no": "OTP_MOBILE_N0",
+                "plancoverCode": "PCGMCARE-20190227-0113",
+                "autodebitflag": "AUTO_DEBIT_FLAG",
+                "agent_state_code": "20",
+                "functionality": "FUNCTIONALITY",
+                "product_code": "PRODUCT_CODE",
+                "gstin": "",
+                "igst": "18",
+                "partbrrefid": "PART_BRR_EFID",
+                "ab_emp_id": "AB_EMP_ID",
+                "rate_type": "Per Person",
+                "sgst_prem": "0.00",
+                "rate": "4237",
+                "cust_name": "CUST_NAME",
+                "ugst_prem": "0.00",
+                "spcode": "10241200",
+                "policy_enddate": "POLICY_EDATE",
+                "lead_id": "LEAD_ID",
+                "telphone_no": "PH_NO",
+                "emp_code": "EMP_CODE",
+                "other_cess_prem": "0.00",
+                "cgst": "0",
+                "quote_type": "QUOTE_TYPE",
+                "totalpremium": "5000.00",
+                "partnername": "PARTNER_NAME",
+                "timelog": {
+                  "S0": "D20191101T151750"
+                },
+                "floater_si": "2000000",
+                "cust_pincode": "CUST_PIN_CODE"
+              }
+            }
+          },
+          "_behaviors": {
+            "copy": [
+              {
+                "from": "body",
+                "into": "LEAD_ID",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..lead_id"
+                }
+              },
+              {
+                "from": "body",
+                "into": "QUOTATION_NO",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..quotation_no"
+                }
+              },
+              {
+                "from": "body",
+                "into": "INTERMEDIARY_NAME",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..intermediary_name"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PARTNER_NAME",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..partnername"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PLAN_CODE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..plan_code"
+                }
+              },
+              {
+                "from": "body",
+                "into": "GRP_NAME",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..grp_name"
+                }
+              },
+              {
+                "from": "body",
+                "into": "MASTER_POL",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..masterpolno"
+                }
+              },
+              {
+                "from": "body",
+                "into": "SOURCE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..source"
+                }
+              },
+              {
+                "from": "body",
+                "into": "BRANCH",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..branch"
+                }
+              },
+              {
+                "from": "body",
+                "into": "GRP_CUST_ID",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..group_custid"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PARTNER_APP_NO",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..partnerappno"
+                }
+              },
+              {
+                "from": "body",
+                "into": "POLICY_SDATE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..policy_sdate"
+                }
+              },
+              {
+                "from": "body",
+                "into": "SOL_ID",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..sol_id"
+                }
+              },
+              {
+                "from": "body",
+                "into": "POLICY_TENURE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..policy_tenure"
+                }
+              },
+              {
+                "from": "body",
+                "into": "INTERMEDIARY_CODE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..intermediary_code"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PRODUCT_NAME",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..product_name"
+                }
+              },
+              {
+                "from": "body",
+                "into": "POLICY_TYPE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..policy_type"
+                }
+              },
+              {
+                "from": "body",
+                "into": "AB_CUST_ID",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..ab_cust_id"
+                }
+              },
+              {
+                "from": "body",
+                "into": "OTP_MOBILE_NO",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..mobile_no"
+                }
+              },
+              {
+                "from": "body",
+                "into": "EMAIL",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..email_id"
+                }
+              },
+              {
+                "from": "body",
+                "into": "BTYPE_NAME",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..btype_name"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PLAN_TYPE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..plan_type"
+                }
+              },
+              {
+                "from": "body",
+                "into": "INSURED_PERSONS",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..insuredpersons"
+                }
+              },
+              {
+                "from": "body",
+                "into": "AUTO_DEBIT_FLAG",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..autodebitflag"
+                }
+              },
+              {
+                "from": "body",
+                "into": "FUNCTIONALITY",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..functionality"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PRODUCT_CODE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..product_code"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PART_BRR_EFID",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..partbrrefid"
+                }
+              },
+              {
+                "from": "body",
+                "into": "AB_EMP_ID",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..ab_emp_id"
+                }
+              },
+              {
+                "from": "body",
+                "into": "CUST_NAME",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..cust_name"
+                }
+              },
+              {
+                "from": "body",
+                "into": "POLICY_EDATE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..policy_enddate"
+                }
+              },
+              {
+                "from": "body",
+                "into": "PH_NO",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..telphone_no"
+                }
+              },
+              {
+                "from": "body",
+                "into": "EMP_CODE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..emp_code"
+                }
+              },
+              {
+                "from": "body",
+                "into": "QUOTE_TYPE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..quote_type"
+                }
+              },
+              {
+                "from": "body",
+                "into": "CUST_PIN_CODE",
+                "using": {
+                  "method": "jsonpath",
+                  "selector": "$..cust_pincode"
+                }
+              }
+            ],
+            "decorate": "(request, response) => { response.body.members = request.body.members }"
+          }
+        }
+      ],
+      "predicates": [
+        {
+          "equals": {
+            "path": "/insurance_provider/v1/quote",
+            "method": "POST",
+            "headers": { "Content-Type": "application/json" }
+          }
+        },
+        {
+          "exists": { "body": true },
+          "jsonpath": { "selector": "$..lead_id" }
+        },
+        {
+          "exists": { "body": true },
+          "jsonpath": { "selector": "$..quotation_no" }
+        }
+      ]
+    }
+  ]
+}
